@@ -5,7 +5,7 @@ class Adafruit_MQTT:
     #Credential Here 
     AIO_FEED_IDs = ["BBC_LED"]
     AIO_USERNAME = "caotiendattx"
-    AIO_KEY = "aio_MvFj45bGG8L3BWJtwVZISqY87kKl"
+    AIO_KEY = ""
  
 
     def connected(self, client):
