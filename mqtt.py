@@ -5,7 +5,7 @@ class MQTTHelper:
     MQTT_SERVER = "io.adafruit.com"
     MQTT_PORT = 1883
     MQTT_USERNAME = "caotiendattx"
-    MQTT_PASSWORD = "aio_MvFj45bGG8L3BWJtwVZISqY87kKl"
+    MQTT_PASSWORD = "aio_lubm909dQeTS3z19YZRzKaPWVRks"
 
     MQTT_TOPIC = "caotiendattx/feeds/bbc-led"
     MQTT_TOPIC_TEMP = "caotiendattx/feeds/bbc-temp"

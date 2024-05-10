@@ -27,4 +27,3 @@ while True:
     mqtt_publish(mqttObject, mqttObject.MQTT_TOPIC_CO2, co2)
 
     time.sleep(10)
-    pass

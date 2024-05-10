@@ -3,7 +3,7 @@ import os
 
 def get_image():
     # Use the first webcam device
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture('rtsp://admin:admin@172.28.182.32:1935')
     
     # Capture frame-by-frame
     ret, frame = cap.read()
@@ -22,20 +22,25 @@ def get_image():
     # Save the captured frame to the defined path
     cv2.imwrite(input_image_path, frame)
     
-    # Define the output directory to store the split images
-    output_directory = "./assets/output_images"
-    
-    # Create the output directory if it doesn't exist
-    os.makedirs(output_directory, exist_ok=True)
-    
-    # Placeholder for the split_image function
-    # split_image(input_image_path, output_directory)
-    
     # Release the webcam
     cap.release()
 
-# Call the function to capture an image from the webcam
-get_image()
 
-# Print a success message
-print("Webcam image captured and saved.")
+
+def open_camera():
+    while True:
+
+        # Capture the video frame
+        # by 
+        vid = cv2.VideoCapture('rtsp://admin:admin@172.28.182.32:1935')
+        ret, frame = vid.read()
+        # Display the resulting frame
+        cv2.imshow("frame", frame)
+
+        # the 'q' button is set as the
+        # quitting button you may use any
+        # desired button of your choice
+        if cv2.waitKey(1) & 0xFF == ord("q"):
+            break
+
+open_camera()
